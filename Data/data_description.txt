@@ -28,7 +28,7 @@ MSZoning: Identifies the general zoning classification of the sale.
        RP	Residential Low Density Park 
        RM	Residential Medium Density
 	
-LotFrontage: Linear feet of street connected to property
+LotFrontage: Linear feet of street connected to property (Longueur en pieds linéaires de la rue desservant la propriété)
 
 LotArea: Lot size in square feet
 
