@@ -1,0 +1,7 @@
+Modèle,RMSE log (CV),Temps (s),Écart médian (%),Kaggle
+M4 XGBoost,0.11275,426.22,5.46,
+M2 ElasticNet,0.115,0.14,6.04,0.12509
+M1 Lasso,0.11675,2.4,6.2,
+M3 Random Forest,0.13001,47.44,5.92,
+M0 Baseline,0.15739,0.02,8.36,
+M5 Neural Network,0.22708,240.29,11.19,
