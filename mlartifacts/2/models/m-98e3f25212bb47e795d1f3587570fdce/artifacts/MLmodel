@@ -1,0 +1,95 @@
+artifact_path: mlflow-artifacts:/2/models/m-98e3f25212bb47e795d1f3587570fdce/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.13.0
+model_id: m-98e3f25212bb47e795d1f3587570fdce
+model_size_bytes: 1860075
+model_uuid: m-98e3f25212bb47e795d1f3587570fdce
+prompts: null
+run_id: 646da82562614d2e87b3ea6405b0f037
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "MSSubClass", "required": true}, {"type": "string",
+    "name": "MSZoning", "required": true}, {"type": "double", "name": "LotFrontage",
+    "required": false}, {"type": "long", "name": "LotArea", "required": true}, {"type":
+    "string", "name": "Street", "required": true}, {"type": "string", "name": "Alley",
+    "required": true}, {"type": "string", "name": "LotShape", "required": true}, {"type":
+    "string", "name": "LandContour", "required": true}, {"type": "string", "name":
+    "Utilities", "required": true}, {"type": "string", "name": "LotConfig", "required":
+    true}, {"type": "string", "name": "LandSlope", "required": true}, {"type": "string",
+    "name": "Neighborhood", "required": true}, {"type": "string", "name": "Condition1",
+    "required": true}, {"type": "string", "name": "Condition2", "required": true},
+    {"type": "string", "name": "BldgType", "required": true}, {"type": "string", "name":
+    "HouseStyle", "required": true}, {"type": "long", "name": "OverallQual", "required":
+    true}, {"type": "long", "name": "OverallCond", "required": true}, {"type": "string",
+    "name": "RoofStyle", "required": true}, {"type": "string", "name": "RoofMatl",
+    "required": true}, {"type": "string", "name": "Exterior1st", "required": true},
+    {"type": "string", "name": "Exterior2nd", "required": true}, {"type": "string",
+    "name": "MasVnrType", "required": true}, {"type": "double", "name": "MasVnrArea",
+    "required": true}, {"type": "long", "name": "ExterQual", "required": true}, {"type":
+    "long", "name": "ExterCond", "required": true}, {"type": "string", "name": "Foundation",
+    "required": true}, {"type": "double", "name": "BsmtQual", "required": true}, {"type":
+    "double", "name": "BsmtCond", "required": true}, {"type": "double", "name": "BsmtExposure",
+    "required": true}, {"type": "double", "name": "BsmtFinType1", "required": true},
+    {"type": "long", "name": "BsmtFinSF1", "required": true}, {"type": "double", "name":
+    "BsmtFinType2", "required": true}, {"type": "long", "name": "BsmtFinSF2", "required":
+    true}, {"type": "long", "name": "BsmtUnfSF", "required": true}, {"type": "long",
+    "name": "TotalBsmtSF", "required": true}, {"type": "string", "name": "Heating",
+    "required": true}, {"type": "long", "name": "HeatingQC", "required": true}, {"type":
+    "string", "name": "CentralAir", "required": true}, {"type": "string", "name":
+    "Electrical", "required": false}, {"type": "long", "name": "1stFlrSF", "required":
+    true}, {"type": "long", "name": "2ndFlrSF", "required": true}, {"type": "long",
+    "name": "LowQualFinSF", "required": true}, {"type": "long", "name": "GrLivArea",
+    "required": true}, {"type": "long", "name": "BsmtFullBath", "required": true},
+    {"type": "long", "name": "BsmtHalfBath", "required": true}, {"type": "long", "name":
+    "FullBath", "required": true}, {"type": "long", "name": "HalfBath", "required":
+    true}, {"type": "long", "name": "BedroomAbvGr", "required": true}, {"type": "long",
+    "name": "KitchenAbvGr", "required": true}, {"type": "long", "name": "KitchenQual",
+    "required": true}, {"type": "long", "name": "TotRmsAbvGrd", "required": true},
+    {"type": "long", "name": "Functional", "required": true}, {"type": "long", "name":
+    "Fireplaces", "required": true}, {"type": "double", "name": "FireplaceQu", "required":
+    true}, {"type": "string", "name": "GarageType", "required": true}, {"type": "double",
+    "name": "GarageFinish", "required": true}, {"type": "long", "name": "GarageCars",
+    "required": true}, {"type": "long", "name": "GarageArea", "required": true}, {"type":
+    "double", "name": "GarageQual", "required": true}, {"type": "double", "name":
+    "GarageCond", "required": true}, {"type": "string", "name": "PavedDrive", "required":
+    true}, {"type": "long", "name": "WoodDeckSF", "required": true}, {"type": "long",
+    "name": "OpenPorchSF", "required": true}, {"type": "long", "name": "EnclosedPorch",
+    "required": true}, {"type": "long", "name": "3SsnPorch", "required": true}, {"type":
+    "long", "name": "ScreenPorch", "required": true}, {"type": "long", "name": "PoolArea",
+    "required": true}, {"type": "double", "name": "PoolQC", "required": true}, {"type":
+    "string", "name": "Fence", "required": true}, {"type": "string", "name": "MiscFeature",
+    "required": true}, {"type": "long", "name": "MiscVal", "required": true}, {"type":
+    "long", "name": "MoSold", "required": true}, {"type": "long", "name": "YrSold",
+    "required": true}, {"type": "string", "name": "SaleType", "required": true}, {"type":
+    "string", "name": "SaleCondition", "required": true}, {"type": "long", "name":
+    "TotalSF", "required": true}, {"type": "double", "name": "TotalBath", "required":
+    true}, {"type": "long", "name": "TotalPorchSF", "required": true}, {"type": "long",
+    "name": "QualxArea", "required": true}, {"type": "long", "name": "IsRemodeled",
+    "required": true}, {"type": "long", "name": "HasGarage", "required": true}, {"type":
+    "long", "name": "HasBsmt", "required": true}, {"type": "long", "name": "HasFireplace",
+    "required": true}, {"type": "long", "name": "HasPool", "required": true}, {"type":
+    "long", "name": "AgeBuilt", "required": true}, {"type": "long", "name": "AgeRemodAdd",
+    "required": true}, {"type": "double", "name": "AgeGarage", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-14 12:44:01.813104'
